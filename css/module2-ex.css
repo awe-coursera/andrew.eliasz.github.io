@@ -1,0 +1,244 @@
+/* Important note:  when commenting ... if by any chance there is a space between a * and the / then 
+all the css stylesheet will be in error */
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  width: 100%;
+}
+
+div.relative {
+	position: relative;
+}
+
+div.ellipsis { 
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+div.clip { 
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: clip;}
+
+div.boxDecoration {
+	/*top: 1%;*/
+	padding: 1em; 
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	margin: 20px;	
+}
+
+div.cellTopRelativeRight p {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -40%);
+}
+
+#item1 {
+	background-color: darkkhaki;
+}
+
+#item2 {
+	background-color: darksalmon;
+}
+
+#item3 {
+	background-color: darkseagreen;
+}
+
+
+
+.stdtext { text-indent: 2em, font-family:'trebuchet ms', verdana, arial, helvetica, sans-serif; text-align:justify;}
+
+.cellContainer { position:relative; top:0; height: 150px; left:0; margin:0 2%; padding:0px;
+   background-color:#fff; border:solid 2px black; }
+.cellTop { position:absolute; top:0px; right:0px; width:20%; padding:3px; margin:2px;
+   border:solid 1px blue; background-color:lightgreen; }
+.cellTopRelativeRight { position:relative; float:right; width:150px; height:30px; margin: 2%;
+   border:solid 1px blue;  background-color:lightgreen; }
+.cellBottom { position:absolute; bottom:0px; right:0px; width:20%; padding:3px; margin:2px;
+   border:solid 1px green; background-color:#f0f0f0; }
+.cellContent { margin-right:22%; }
+.cellCenter { float:left; min-width:45%; }
+.floatRight { float:right; width:20%; padding:.5%; margin:0;
+   border:solid 1px blue; background-color:white; }
+.floatLeft { float:left; width:20%; padding:.5%; margin:0;
+   border:solid 1px blue; background-color:skyblue; }
+.centerColBox { padding:0 .5em; overflow:hidden; }
+.fixedWidth { width:32%; background-color:pink; }
+.clearFloats { clear:both;}
+
+
+/* media styles */
+@media screen and (min-width:992px) {
+/* Desktop view styles */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-v-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    /* border: 1px solid green; */
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+/* Desktop view styles */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+   /* border: 1px solid green; */
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  } 
+
+  .row .col-md-6:last-of-type {
+	width: 100%;
+  }
+
+}
+
+
+
+.centred {
+	text-align: center;
+	color: black;
+	font-family:'trebuchet ms', verdana, arial, helvetica, sans-serif;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+div {
+  background-color: white;
+}
+
+/* p {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+} */
+
+.htmltag {
+	color: #080;
+	font-weight:bold;
+	font-style: italic;
+	test-transform:lowercase;
+}
+
+.htmltag:before { content: '<'; }
+.htmltag:after { content: '>'; }
+
+.left1 {
+  background-color: #A52A2A;
+  float: left;
+  height: 150px;
+
+}
+
+.right1 {
+  background-color: #DEB887;
+  float: right;
+  height: 100px;
+}
+
+p {
+  /* border: 1px solid black; */
+  /* background-color: #A52A2A; */
+  /* width: 90%; */
+  width:auto;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: black;
+}
+
+p.title {
+/*  height: 50%;
+  margin-right: auto;
+  margin-left: auto; 
+  text-align: center; */
+  height: 30px;
+  font-family: Helvetica;
+  color: black;
+}
+
+/* Examples from lectures
+	Lecture 22 positioning after	  
+	Lecture 24 responsive after
+*/

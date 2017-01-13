@@ -1,6 +1,8 @@
 /* Important note:  when commenting ... if by any chance there is a space between a * and the / then 
 all the css stylesheet will be in error */
 
+/* absolute vs. relative positioning .. */
+
 * {
   box-sizing: border-box;
 }
